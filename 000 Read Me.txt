@@ -1,0 +1,3 @@
+To create custom .exe file, g++ -o "File Name.exe" "File Name.cpp" 
+To compile, g++ "File Name.cpp"
+To run, .\"File Name.exe", File Name is 'a' by default
