@@ -1,4 +1,5 @@
 #include<iostream>
+#include<string>
 using namespace std;
 
 template <class dt1, class dt2>
@@ -15,4 +16,6 @@ int main()
 	adder(2,3.5);
 	adder(3.4,'a');
 	adder('a',2);
+	string a= "ab", b= "bc";
+	adder(a, b);
 }
