@@ -10,7 +10,9 @@ void printVector(vector<int> a);
 int main(){
     int n;
     vector<int> a= {1, 2, 3, 4, 5}; // can be declared similar to array
-    vector<int> b;
+    // vector<int> a{1, 2, 3, 4, 5};// by the way, here is another way
+    vector<int> b;                  // and an empty declaration
+    // cout<<b.size()<<endl;
     for(int i=0; i<5; i++)
         cout<<a[i]<<' ';            // and will be accessed similar to arrays
     cout<<endl;
@@ -63,9 +65,11 @@ int main(){
     printVector(a);
     printVector(b);
     cout<<a.empty()<<endl;  // finding if a vector is empty
-    a.assign({10, 9, 8, 7, 6}); // assign another vector
+    // a.copy(b);           // this is a way to copy a vector
+    // a=b;                 // this is a better way though
+    a.assign({10, 9, 8, 7, 6}); // assign another vector, does the same
     // a.assign(b.begin()+1, b.begin()+3);  // or a part of it
-    // a.assign(5, 2);      // or make a vector of required size and default values
+    // a.assign(5, 2);      // or make a vector of required size and default values, we can't do it with copy
     cout<<"After new assignment"<<endl;
     printVector(a);
     a.clear();              // or completely clear it
